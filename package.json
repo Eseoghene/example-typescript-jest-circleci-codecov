@@ -27,5 +27,8 @@
       "json",
       "jsx"
     ]
+  },
+  "scripts": {
+    "test": "jest index.test.ts"
   }
 }
