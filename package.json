@@ -4,13 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest index.test.ts && codecov"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^20.0.8",
+    "codecov": "^2.3.0",
     "jest": "^20.0.4",
     "ts-jest": "^20.0.10",
     "typescript": "^2.4.2"
@@ -26,9 +27,8 @@
       "js",
       "json",
       "jsx"
-    ]
-  },
-  "scripts": {
-    "test": "jest index.test.ts"
+    ],
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true
   }
 }
